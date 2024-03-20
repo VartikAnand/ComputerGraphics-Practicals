@@ -1,8 +1,3 @@
-# Write a program to Translate a line. 
-
-## code 
-
-```CPP
 // Write a program to Translate a line
 
 #include <iostream.h>
@@ -44,11 +39,3 @@ void main()
 
     closegraph();
 }
-
-```
-
-
-
-## Output
-
-![Output](1.png)
