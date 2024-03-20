@@ -1,3 +1,3 @@
-# Exclude specific numbered CPP and BAK files
-[0-9][0-9].CPP
+# Exclude files starting from 01 to 15 with extensions .BAK and .CPP
 [0-9][0-9].BAK
+[0-9][0-9].CPP
