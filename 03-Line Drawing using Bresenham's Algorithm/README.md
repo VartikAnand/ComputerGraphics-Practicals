@@ -3,7 +3,6 @@
 ## code 
 
 ```CPP
-// Write aProgram to implement Bresenham's Line Drawing Algorithm:
 #include <iostream.h>
 #include <conio.h>
 #include <graphics.h>
@@ -30,22 +29,22 @@ void main()
 
         if (p >= 0)
         {
-            putpixel(x1, y1, BLUE);
+
             p = p + 2 * dy - 2 * dx;
             y1++;
         }
         else
         {
-            putpixel(x1, y1, BLUE);
+
             p = p + 2 * dy;
-            x1++;
         }
+        x1++;
+        putpixel(x1, y1, RED);
     }
 
     getch();
     closegraph();
 }
-
 ```
 
 

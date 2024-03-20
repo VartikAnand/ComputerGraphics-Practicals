@@ -2,36 +2,40 @@
 #include <conio.h>
 #include <graphics.h>
 
+void main()
+{
 
-void main(){
+    int gd = DETECT, gm;
+    initgraph(&gd, &gm, "c:/turboc3/bgi");
+    int x1, y1, x2, y2, dx, dy, p;
 
-    int gd=DETECT,gm;
-    initgraphs(&gd,&gm,"c:/turboc3/bgi");
-    int x1,y1,x2,y2,dx,dy,p;
+    cout << "Enter x1 && y1 : " << endl;
+    cin >> x1 >> y1;
+    cout << "Enter x2 && y2 : " << endl;
+    cin >> x2 >> y2;
 
-    cout<< "Enter x1 && y1 : "<<endl;
-    cin>>x1>>y1;
-    cout<< "Enter x2 && y2 : "<<endl;
-    cin>>x2>>y2;
+    dx = x2 - x1;
+    dy = y2 - y1;
 
-    dx= x2-x1;
-    dy= y2-y1;
+    p = 2 * dy - dx;
 
-    p= 2*dy-dx;
+    while (x1 < x2)
+    {
 
-    while(x1 <=x2){
-        putpixel(x1,y1,BLUE);
-        
-        if(p<0){
-	    x1++
-	    p=p+2*dy;
-	}else{
-	    y1++
-            p=p+2*dy-2*dx;
+        if (p >= 0)
+        {
+            putpixel(x1, y1, BLUE);
+            p = p + 2 * dy - 2 * dx;
+            y1++;
+        }
+        else
+        {
+            putpixel(x1, y1, BLUE);
+            p = p + 2 * dy;
+            x1++;
         }
     }
 
     getch();
     closegraph();
-
 }

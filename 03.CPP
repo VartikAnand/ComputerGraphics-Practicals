@@ -24,16 +24,17 @@ void main()
 
         if (p >= 0)
         {
-            putpixel(x1, y1, BLUE);
+
             p = p + 2 * dy - 2 * dx;
             y1++;
         }
         else
         {
-            putpixel(x1, y1, BLUE);
+
             p = p + 2 * dy;
-            x1++;
         }
+        x1++;
+        putpixel(x1, y1, RED);
     }
 
     getch();
