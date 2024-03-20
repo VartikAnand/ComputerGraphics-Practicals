@@ -46,6 +46,8 @@ This repository contains Computer Graphics All BCA Practical of various graphics
 14. **[Bouncing Ball in Vertical Direction](#bouncing-ball-in-vertical-direction)**
     - Implementation of a simple animation of a bouncing ball moving in a vertical direction.
 
+    15. **[Draw animation using increasing circle filled with color](#animation-circle-with-filled-color)**
+
 ---
 
 Feel free to explore each example for detailed explanations and code implementations.
